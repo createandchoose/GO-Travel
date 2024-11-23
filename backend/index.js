@@ -47,9 +47,9 @@ app.use("/api/review", reviewRoutes);
 app.use("/api/booking", bookingRoutes);
 
 app.get("/", (req, res) => {
-  res.send("Welcome to the Trips & Travels API!");
+  res.send("Api Для GO Travel");
 });
 
 app.listen(PORT, () => {
-  console.log(`Server is running on port ${PORT}`);
+  console.log(`Server poexal: port ${PORT}`);
 });
