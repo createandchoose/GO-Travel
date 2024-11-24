@@ -8,18 +8,18 @@ import { IoMdBus } from "react-icons/io";
 const ServicesList = () => {
   const services = [
     {
-      title: 'Adventure Tours',
-      description: 'Explore thrilling destinations with our guided adventure tours.',
+      title: 'Туры',
+      description: 'Исследуйте захватывающие места с нашими приключенческими турами.',
       icon: <IoMdBus />,
     },
     {
-      title: 'Travel Planning',
-      description: 'Let us handle the details! We plan, you enjoy your dream vacation.',
+      title: 'Планирование путешествия',
+      description: 'Разберемся с деталями! Мы планируем, чтобы вы наслаждались отдыхом своей мечты.',
       icon: <FaPlaneDeparture />,
     },
     {
-      title: 'High-Quality Accommodations',
-      description: 'Experience comfort and luxury with our carefully selected accommodations.',
+      title: 'Высококачественное жилье',
+      description: 'Ощутите комфорт и роскошь в наших тщательно отобранных номерах.',
       icon: <MdHotel />,
     },
   ];

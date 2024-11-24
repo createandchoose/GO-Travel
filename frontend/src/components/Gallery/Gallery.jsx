@@ -1,14 +1,14 @@
 import React, { useState, useEffect } from "react";
 import Masonry, { ResponsiveMasonry } from "react-responsive-masonry";
 import Modal from "react-modal";
-import Img01 from "../../assets/images/hero-img01.jpg";
-import Img02 from "../../assets/images/hero-img02.jpg";
-import Img03 from "../../assets/images/front-02.jpg";
-import Img04 from "../../assets/images/gallery-04.jpg";
-import Img06 from "../../assets/images/gallery-03.jpg";
-import Img07 from "../../assets/images/gallery-08.jpg";
-import Img08 from "../../assets/images/gallery-02.jpg";
-import Img09 from "../../assets/images/gallery-01.jpg";
+import Img01 from "../../assets/images/Buluus_1.jpg";
+import Img02 from "../../assets/images/Kisilyah_1.jpg";
+import Img03 from "../../assets/images/Kyrylyr.jpeg";
+import Img04 from "../../assets/images/L6NuNcAyNj.jpg";
+import Img06 from "../../assets/images/Labynkyr.jpg";
+import Img07 from "../../assets/images/LenaPillars_1.jpeg";
+import Img08 from "../../assets/images/Buluus_1.jpg";
+import Img09 from "../../assets/images/Kempendyai.jpg";
 
 const ImagesGallery = () => {
   const [selectedImage, setSelectedImage] = useState(null);

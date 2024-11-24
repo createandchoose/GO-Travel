@@ -37,7 +37,7 @@ const SearchTours = () => {
       <section className="py-4 px-6 md:px-12">
         <div className="container text-center">
           <h2 className="text-[30px] md:text-[40px]  font-bold mb-4 text-center">
-            Find a <span className="text-BaseColor">Tour</span>
+            Искать Туры
           </h2>
           <div className="max-w-[570px] mt-[15px] mx-auto bg-gray-100  rounded-md flex items-center justify-between">
             <input
@@ -45,13 +45,13 @@ const SearchTours = () => {
               ref={cityRef}
               onKeyPress={handleKeyPress}
               className="py-4 pl-4 bg-transparent w-full focus:outline-none  placeholder:text-TextColor"
-              placeholder="Search Doctor"
+              placeholder="Поиск "
             />
             <button
               onClick={SubmitHandler}
               className="Searchbtn mt-0 rounded-[0px] rounded-r-md mx-2 hover:px-6"
             >
-              Search
+              поиск
             </button>
           </div>
         </div>

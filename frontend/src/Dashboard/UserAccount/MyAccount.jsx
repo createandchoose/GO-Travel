@@ -14,7 +14,7 @@ const MyAccount = () => {
 
   const confirmDelete = async () => {
     const result = window.confirm(
-      "Are you sure you want to delete your account?"
+      "Вы уверены удалить аккаунт?"
     );
     if (result) {
       deleteAccount();
@@ -35,11 +35,11 @@ const MyAccount = () => {
       if (!response.ok) {
         toast.error(message);
       } else {
-        dispatch({ type: "LOGOUT" });
+        dispatch({ type: "Выйти" });
         navigate("/register");
       }
     } catch (err) {
-      toast.error("Server not responding");
+      toast.error("Сервер не отвечает");
     }
   };
 
@@ -72,13 +72,13 @@ const MyAccount = () => {
                 onClick={() => setTab("settings")}
                 className="w-full mb-2 btn"
               >
-                Update Name
+                Сменить имя
               </button>
               <button
                 onClick={confirmDelete}
                 className="w-full bg-black noCbtn hover:bg-gray-900 "
               >
-                Delete Account
+                Удалить аккаунт
               </button>
             </div>
           </div>
@@ -91,7 +91,7 @@ const MyAccount = () => {
                   tab === "bookings" && "bg-GrayColor text-white font-bold"
                 } p-2 mr-5 px-3 lg:px-5 rounded-md text-HeadingColor font-semibold text-[13px] md:text-[14px] lg:text-[16px] leading-7 border border-solid border-Color`}
               >
-                My Bookings
+                Мои бронирования
               </button>
               <button
                 onClick={() => setTab("settings")}
@@ -99,7 +99,7 @@ const MyAccount = () => {
                   tab === "settings" && "bg-GrayColor text-white font-bold"
                 } p-2 mr-5 px-3 lg:px-5 rounded-md text-HeadingColor font-semibold text-[13px] md:text-[14px] lg:text-[16px] leading-7 border border-solid border-Color`}
               >
-                Profile Settings
+                Настройки профиля
               </button>
             </div>
             {tab === "bookings" && <Bookings />}

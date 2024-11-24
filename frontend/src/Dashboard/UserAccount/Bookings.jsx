@@ -14,10 +14,10 @@ const Bookings = () => {
         <table className="w-full table-auto text-xs md:text-sm gap-4 border-collapse border">
           <thead className="w-full py-2">
             <tr>
-              <th className="tableData">Tour</th>
-              <th className="hidden md:block tableData">Persons</th>
-              <th className="tableData">Booked for</th>
-              <th className="tableData">Price</th>
+              <th className="tableData">Туры</th>
+              <th className="hidden md:block tableData">Лица</th>
+              <th className="tableData">Забронировать </th>
+              <th className="tableData">Цена</th>
               <th></th>
             </tr>
           </thead>

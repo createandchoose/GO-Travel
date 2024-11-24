@@ -7,7 +7,7 @@ const BookingCard = ({ booking }) => {
 
   const confirmDelete = async () => {
     const result = window.confirm(
-      "Are you sure you want to delete this booking?"
+      "Вы уверены, что хотите отменить бронирование?"
     );
     if (result) {
       deleteBooking();
@@ -39,7 +39,7 @@ const BookingCard = ({ booking }) => {
           <td className="tableData text-start">{tourName}</td>
           <td className="hidden md:table-cell tableData">{maxGroupSize}</td>
           <td>{date}</td>
-          <td>{totalPrice}</td>
+          <td>{totalPrice},00 руб.</td>
           <td>
             <button
               onClick={confirmDelete}
@@ -51,7 +51,7 @@ const BookingCard = ({ booking }) => {
               onClick={confirmDelete}
               className="hidden md:block noCbtn bg-black my-2 mx-2 hover:bg-gray-900 "
             >
-              Cancel Booking
+              Отмена
             </button>
           </td>
         </tr>

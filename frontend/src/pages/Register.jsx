@@ -42,30 +42,24 @@ const Register = () => {
         toast.error(message);
       }
     } catch (err) {
-      toast.error("Server not responding");
+      toast.error("Сервер не");
     }
   };
 
   return (
     <div className="min-h-screen md:min-h-[400px] flex items-center justify-center bg-gray-100">
-      <div className="bg-white mx-6 p-6 md:p-8 rounded-lg shadow-md w-full max-w-xl m-8 md:max-w-5xl grid grid-cols-1 md:grid-cols-2 gap-4 md:gap-12">
+      <div className="bg-white mx-6 p-6 md:p-8 rounded-lg shadow-md w-full max-w-xl m-8 md:max-w-5xl ">
         {/* Sign Up Photo */}
-        <div className="hidden md:block">
-          <img
-            src={RegisterImg}
-            alt="Trips Travels Logo"
-            className="mx-auto h-full object-cover"
-          />
-        </div>
+        
 
-        {/* Sign Up Form */}
+        
         <div className="flex flex-col justify-center">
           <div className="text-center mb-6">
             <h2 className="text-2xl md:text-3xl font-bold text-gray-800 mb-2">
-              Register
+              Регистрация
             </h2>
             <p className="text-sm md:text-base text-GrayColor">
-              Create your account to start your journey.
+            Создайте свою учетную запись, чтобы начать свое путешествие.
             </p>
           </div>
 
@@ -75,12 +69,12 @@ const Register = () => {
                 htmlFor=""
                 className="block text-md md:text-lg font-medium text-GrayColor"
               >
-                Username
+                имя пользователя
               </label>
               <input
                 type="text"
                 name="username"
-                placeholder="Enter your username"
+                placeholder="Введите свое имя пользователя"
                 className="w-full px-4 py-2 border rounded-md focus:outline-none focus:border-BaseColor"
                 value={formData.username}
                 onChange={handleInput}
@@ -98,7 +92,7 @@ const Register = () => {
               <input
                 type="email"
                 name="email"
-                placeholder="Enter your email"
+                placeholder="Введите свой email"
                 className="w-full px-4 py-2 border rounded-md focus:outline-none focus:border-BaseColor"
                 value={formData.email}
                 onChange={handleInput}
@@ -111,12 +105,12 @@ const Register = () => {
                 htmlFor=""
                 className="block text-md md:text-lg font-medium text-GrayColor"
               >
-                Password
+                Пароль
               </label>
               <input
                 type="password"
                 name="password"
-                placeholder="Enter your password"
+                placeholder="Введите свой пароль"
                 className="w-full px-4 py-2 border rounded-md focus:outline-none focus:border-BaseColor"
                 value={formData.password}
                 onChange={handleInput}
@@ -130,15 +124,15 @@ const Register = () => {
                 className="w-full btn my-3"
                 disabled={isLoading}
               >
-                {isLoading ? "Registering..." : "Register"}
+                {isLoading ? "Регистарция..." : "Регистрация"}
               </button>
               <p className="text-sm md:text-base text-center">
-                Already have an Account?{" "}
+                У вас уже есть учетная запись?{" "}
                 <Link
                   className="text-BaseColor hover:text-BHoverColor"
                   to="/login"
                 >
-                  Login here
+                  Логин здесь
                 </Link>
               </p>
             </div>

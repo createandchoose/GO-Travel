@@ -40,61 +40,6 @@ const SearchBar = () => {
       );
     }
   };
-
-  return (
-    <div>
-      <div className="search-bar">
-        <form className="form md:flex hidden items-center gap-4">
-          <div className="form-group flex gap-3 md:form-group-fast">
-            <span>
-              <i>
-                <FaPeopleGroup />
-              </i>
-            </span>
-            <div>
-              <h6>Location</h6>
-              <input
-                type="text"
-                placeholder="Where are you going?"
-                ref={cityRef}
-              />
-            </div>
-          </div>
-          <div className="form-group flex gap-3 md:form-group-fast">
-            <span>
-              <i>
-                <IoIosPricetags />
-              </i>
-            </span>
-            <div>
-              <h6>Min Price</h6>
-              <input type="number" placeholder="Mn. Price" ref={minPriceRef} />
-            </div>
-          </div>
-          <div className="form-group flex gap-3 form-group-last">
-            <span>
-              <i>
-                <IoIosPricetags />
-              </i>
-            </span>
-            <div>
-              <h6>Max Price</h6>
-              <input type="number" placeholder="Max Price" ref={maxPriceRef} />
-            </div>
-          </div>
-          <span
-            className="search-icon bg-BaseColor rounded-lg cursor-pointer py-2 px-2"
-            type="submit"
-            onClick={SubmitHandler}
-          >
-            <i>
-              <IoIosSearch size={30} className="text-white" />
-            </i>
-          </span>
-        </form>
-      </div>
-    </div>
-  );
 };
 
 export default SearchBar;

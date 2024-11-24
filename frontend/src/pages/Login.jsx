@@ -1,7 +1,7 @@
 import React, { useState, useContext } from "react";
 import { toast } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
-import LoginImg from "./../assets/images/login2.png";
+// import LoginImg from "./../assets/images/login2.png";
 import { Link, useNavigate } from "react-router-dom";
 import { AuthContext } from "../context/AuthContext";
 import BASE_URL from "../utils/config";
@@ -51,30 +51,23 @@ const Login = () => {
         toast.error(result.message);
       }
     } catch (err) {
-      toast.error("Server not responding");
+      toast.error("Сервер не отвечает");
     }
   };
 
   return (
     <div className="min-h-screen flex items-center justify-center px-6 bg-gray-100">
-      <div className="bg-white p-4 md:p-8 rounded-lg shadow-md w-full max-w-xl md:max-w-5xl grid grid-cols-1 md:grid-cols-2 gap-4 md:gap-12">
-        {/* Login Photo */}
-        <div className="hidden md:block">
-          <img
-            src={LoginImg}
-            alt="Trips Travels Logo"
-            className="mx-auto h-full object-cover"
-          />
-        </div>
+      <div className="bg-white p-4 md:p-8 rounded-lg shadow-md w-full max-w-xl md:max-w-5xl ">
+        
 
         {/* Login Form */}
         <div className="flex flex-col justify-center">
           <div className="text-center mb-6">
             <h2 className="text-2xl md:text-3xl font-bold text-gray-800 mb-2">
-              Login
+              Логин
             </h2>
             <p className="text-sm md:text-base text-gray-500">
-              Enter your credentials to access your account.
+            Введите свои учетные данные, чтобы получить доступ к своей учетной записи.
             </p>
           </div>
 
@@ -89,7 +82,7 @@ const Login = () => {
               <input
                 type="email"
                 name="email"
-                placeholder="Enter your email"
+                placeholder="Напишите свой email"
                 className="w-full px-4 py-2 border rounded-md focus:outline-none focus:border-BaseColor"
                 value={formData.email}
                 onChange={handleInput}
@@ -102,12 +95,12 @@ const Login = () => {
                 htmlFor="password"
                 className="block text-md md:text-lg font-medium text-gray-600"
               >
-                Password
+                Пароль
               </label>
               <input
                 type="password"
                 name="password"
-                placeholder="Enter your password"
+                placeholder="Напишите свой пароль"
                 className="w-full px-4 py-2 border rounded-md focus:outline-none focus:border-BaseColor"
                 value={formData.password}
                 onChange={handleInput}
@@ -121,15 +114,15 @@ const Login = () => {
                 className="w-full btn my-3"
                 disabled={isLoading}
               >
-                {isLoading ? "Logging in..." : "Login"}
+                {isLoading ? "Логин..." : "Логин"}
               </button>
               <p className="text-sm md:text-base text-center">
-                Don't have an Account?{" "}
+                Нет аккаунта?{" "}
                 <Link
-                  className="text-BaseColor hover:text-BHoverColor"
+                  className=" hover:text-BHoverColor"
                   to="/register"
                 >
-                  Register here
+                  Регистрация здесь
                 </Link>
               </p>
             </div>

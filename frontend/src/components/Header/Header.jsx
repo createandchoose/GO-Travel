@@ -1,5 +1,5 @@
 import React, { useState, useRef, useEffect, useContext } from "react";
-import Logo from "./../../assets/images/logo3.png";
+import Logo from "./../../assets/images/mainLogo.png";
 import { Link, useNavigate } from "react-router-dom";
 import { AuthContext } from "../../context/AuthContext";
 import { toast } from "react-toastify";
@@ -16,7 +16,7 @@ const Header = () => {
     dispatch({ type: "LOGOUT" });
     handleMenuToggle();
     navigate("/home");
-    toast.info("Logged Out");
+    toast.info("Выход...");
   };
 
   useEffect(() => {
@@ -90,29 +90,29 @@ const Header = () => {
               {role !== "admin" && (
                 <>
                   <Link to="/home" onClick={handleMenuToggle}>
-                    Home
+                    Домой
                   </Link>
                   <Link to="/tours" onClick={handleMenuToggle}>
-                    Tours
+                    Туры
                   </Link>
                   <Link to="/about" onClick={handleMenuToggle}>
-                    Gallery
+                    Достопримечательности
                   </Link>
                   <Link to="/contact" onClick={handleMenuToggle}>
-                    Contact
+                    Контакты
                   </Link>
                 </>
               )}
               {role === "admin" && (
                 <>
                   <Link to="/all-booking" onClick={handleMenuToggle}>
-                    Bookings
+                    Бронирование
                   </Link>
                   <Link to="/all-tours" onClick={handleMenuToggle}>
-                    Tours
+                    Туры
                   </Link>
                   <Link to="/create" onClick={handleMenuToggle}>
-                    Create
+                    Создать
                   </Link>
                 </>
               )}
@@ -121,18 +121,18 @@ const Header = () => {
                   onClick={handleLogout}
                   className="px-6 py-2 bg-black text-white rounded mx-auto hover:bg-gray-800"
                 >
-                  Logout
+                  Выйти
                 </button>
               ) : null}
               {user ? null : (
                 <div className="flex items-center justify-center gap-4">
                   <Link to="/login" onClick={handleMenuToggle}>
                     <button className="text-BaseColor rounded hover:text-BHoverColor">
-                      Login
+                      Логин
                     </button>
                   </Link>
                   <Link to="/register" onClick={handleMenuToggle}>
-                    <button className="btn">Register</button>
+                    <button className="btn">Регистрация</button>
                   </Link>
                 </div>
               )}
@@ -142,16 +142,16 @@ const Header = () => {
 
         {role === "admin" ? (
           <ul className="md:flex hidden space-x-8">
-            <Link to="/all-booking">Bookings</Link>
-            <Link to="/all-tours">Tours</Link>
-            <Link to="/create">Create</Link>
+            <Link to="/all-booking">Бронирование</Link>
+            <Link to="/all-tours">Туры</Link>
+            <Link to="/create">Создать</Link>
           </ul>
         ) : (
           <ul className="md:flex hidden space-x-4">
-            <Link to="/home">Home</Link>
-            <Link to="/tours">Tours</Link>
-            <Link to="/about">Gallery</Link>
-            <Link to="/contact">Contact</Link>
+            
+            <Link to="/tours">Туры</Link>
+            <Link to="/about">Достопримечательности</Link>
+            <Link to="/contact">Контакты</Link>
           </ul>
         )}
 
@@ -159,7 +159,7 @@ const Header = () => {
           {user ? (
             <div className="flex gap-3 items-center">
               <Link
-                className="text-[18px] font-semibold text-BaseColor rounded hover:text-BHoverColor cursor-pointer"
+                className="text-[18px] font-semibold text-black rounded hover:text-black cursor-pointer"
                 to={role === "user" && "/my-account"}
               >
                 {user.username}
@@ -168,18 +168,18 @@ const Header = () => {
                 onClick={handleLogout}
                 className="px-4 py-2 bg-black text-white rounded hover:bg-gray-800"
               >
-                Logout
+                Выйти
               </button>
             </div>
           ) : (
             <>
               <Link to="/login">
-                <button className="px-4 py-2 text-BaseColor rounded hover:text-BHoverColor">
-                  Login
+                <button className="px-4 py-2  rounded hover:">
+                  Логин
                 </button>
               </Link>
               <Link to="/register">
-                <button className="btn">Register</button>
+                <button className="btn">Регистрация</button>
               </Link>
             </>
           )}

@@ -16,13 +16,13 @@ const Booked = () => {
           <FaCheckCircle size={45} className="text-BaseColor " />
         </i>
         <h2 className="text-[25px] md:text-[40px]  font-bold mb-4 text-start text-BaseColor">
-          Congratulations...!
+          Поздравляем...!
         </h2>
         <h5 className="font-semibold text-[16px] md:text-[20px] pb-9">
-          Your Tour has been booked!
+        Ваш тур забронирован!
         </h5>
         <Link className="btn" to="/my-account">
-          Check Bookings
+          Посмотреть бронирование
         </Link>
         <button></button>
       </div>

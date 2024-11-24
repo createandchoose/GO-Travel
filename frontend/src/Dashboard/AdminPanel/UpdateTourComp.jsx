@@ -83,10 +83,10 @@ const UpdateTours = ({ tour, id }) => {
         <div className="flex flex-col justify-center">
           <div className="text-center mb-6">
             <h2 className="text-2xl md:text-3xl font-bold text-gray-800 mb-2">
-              Update Tour
+              Редактировать тур
             </h2>
             <p className="text-sm md:text-base text-GrayColor">
-              Create a new tour by filling the all fields.
+            Создайте новый тур, заполнив все поля.
             </p>
           </div>
 
@@ -97,12 +97,12 @@ const UpdateTours = ({ tour, id }) => {
                   htmlFor=""
                   className="block  text-md md:text-lg font-medium text-GrayColor"
                 >
-                  Title
+                  Заголовок
                 </label>
                 <input
                   type="text"
                   name="title"
-                  placeholder="Enter Tour Name"
+                  placeholder="Введите заголовок"
                   className="w-full px-4 py-2 border rounded-md focus:outline-none focus:border-GreenColor"
                   value={formData.title}
                   onChange={handleInput}
@@ -115,12 +115,12 @@ const UpdateTours = ({ tour, id }) => {
                   htmlFor=""
                   className="block text-md md:text-lg font-medium text-GrayColor"
                 >
-                  City
+                  Город
                 </label>
                 <input
                   type="text"
                   name="city"
-                  placeholder="Enter City Name"
+                  placeholder="Введите город"
                   className="w-full px-4 py-2 border rounded-md focus:outline-none focus:border-GreenColor"
                   value={formData.city}
                   onChange={handleInput}
@@ -134,12 +134,12 @@ const UpdateTours = ({ tour, id }) => {
                   htmlFor=""
                   className="block text-md md:text-lg font-medium text-GrayColor"
                 >
-                  Price
+                  Цена
                 </label>
                 <input
                   type="number"
                   name="price"
-                  placeholder="Enter Price"
+                  placeholder="Введите цену"
                   className="w-full px-4 py-2 border rounded-md focus:outline-none focus:border-GreenColor"
                   value={formData.price}
                   onChange={handleInput}
@@ -152,12 +152,12 @@ const UpdateTours = ({ tour, id }) => {
                   htmlFor=""
                   className="block text-md md:text-lg font-medium text-GrayColor"
                 >
-                  Max Peoples
+                  Максимум людей
                 </label>
                 <input
                   type="number"
                   name="maxGroupSize"
-                  placeholder="Enter Max Peoples per Trip Tour"
+                  placeholder="Введите максимум людей"
                   className="w-full px-4 py-2 border rounded-md focus:outline-none focus:border-GreenColor"
                   value={formData.maxGroupSize}
                   onChange={handleInput}
@@ -170,12 +170,12 @@ const UpdateTours = ({ tour, id }) => {
                   htmlFor=""
                   className="block text-md md:text-lg font-medium text-GrayColor"
                 >
-                  Distance
+                  Расстояние
                 </label>
                 <input
                   type="number"
                   name="distance"
-                  placeholder="Enter Total Distance"
+                  placeholder="Введите расстояние"
                   className="w-full px-4 py-2 border rounded-md focus:outline-none focus:border-GreenColor"
                   value={formData.distance}
                   onChange={handleInput}
@@ -188,12 +188,12 @@ const UpdateTours = ({ tour, id }) => {
                 htmlFor=""
                 className="block text-md md:text-lg font-medium text-GrayColor"
               >
-                Address
+                Адрес
               </label>
               <input
                 type="text"
                 name="address"
-                placeholder="Enter Destination Address"
+                placeholder="Введите адрес"
                 className="w-full px-4 py-2 border rounded-md focus:outline-none focus:border-GreenColor"
                 value={formData.address}
                 onChange={handleInput}
@@ -206,12 +206,12 @@ const UpdateTours = ({ tour, id }) => {
                 htmlFor=""
                 className="block text-md md:text-lg font-medium text-GrayColor"
               >
-                Description
+                Описание
               </label>
               <input
                 type="text"
                 name="desc"
-                placeholder="Enter Description"
+                placeholder="Введите описание"
                 className="w-full px-4 py-2 border rounded-md focus:outline-none focus:border-GreenColor"
                 value={formData.desc}
                 onChange={handleInput}
@@ -223,12 +223,12 @@ const UpdateTours = ({ tour, id }) => {
                 htmlFor=""
                 className="block text-md md:text-lg font-medium text-GrayColor"
               >
-                Photo URL
+                Фото URL
               </label>
               <input
                 type="text"
                 name="photo"
-                placeholder="Enter Picture URL"
+                placeholder="Введите URL фото"
                 className="w-full px-4 py-2 border rounded-md focus:outline-none focus:border-GreenColor"
                 value={formData.photo}
                 onChange={handleInput}
@@ -241,15 +241,15 @@ const UpdateTours = ({ tour, id }) => {
                 htmlFor=""
                 className="text-TextColor text-[15px] font-semibold leading-7 px-4"
               >
-                Featured
+                Популярные
                 <select
                   name="featured"
                   value={formData.featured}
                   onChange={handleInput}
                   className="text-TextColor text-[15px] leading-7 px-4 py-3 focus:outline-none"
                 >
-                  <option value="false">No</option>
-                  <option value="true">Yes</option>
+                  <option value="false">Нет</option>
+                  <option value="true">Да</option>
                 </select>
               </label>
             </div>
@@ -260,7 +260,7 @@ const UpdateTours = ({ tour, id }) => {
                 className="w-full Bluebtn my-3"
                 disabled={isLoading}
               >
-                {isLoading ? "Updating..." : "Update"}
+                {isLoading ? "Обновить..." : "Обновить"}
               </button>
             </div>
           </form>

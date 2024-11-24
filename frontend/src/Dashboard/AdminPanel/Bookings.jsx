@@ -12,15 +12,15 @@ const Bookings = () => {
         <table className=" table-auto gap-4 text-xs md:text-sm border-collapse w-[120%]  border-gray-400 lg:w-full border">
           <thead className="w-full bg-gray-200">
             <tr>
-              <th className="tableData">TourName</th>
-              <th className="tableData">UserName</th>
-              <th className="tableData">User ID</th>
-              <th className="tableData">Persons</th>
-              <th className="tableData">Phone</th>
-              <th className="tableData">Booked for</th>
-              <th className="tableData">Booked on</th>
-              <th className="tableData">Price</th>
-              <th className="tableData">Status</th>
+              <th className="tableData">Названия тура</th>
+              <th className="tableData">Полное Имя</th>
+              <th className="tableData">ID</th>
+              <th className="tableData">Лица</th>
+              <th className="tableData">Телефон</th>
+              <th className="tableData">Бронирования</th>
+              <th className="tableData">Дата бронирования</th>
+              <th className="tableData">Цена</th>
+              <th className="tableData">Статус</th>
             </tr>
           </thead>
           {bookings?.map((booking) => (

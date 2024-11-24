@@ -112,7 +112,7 @@ const Profile = () => {
         </div>
 
         <div>
-          <button className="Searchbtn w-full rounded-md">Update Now</button>
+          <button className="Searchbtn w-full rounded-md">Обновить</button>
         </div>
       </form>
     </div>

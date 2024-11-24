@@ -121,7 +121,7 @@ const TourDetails = () => {
                     <i>
                       <FaDollarSign />
                     </i>
-                    <span>Rs. {price}/per head</span>
+                    <span> {price},00 руб. /За человека</span>
                   </div>
                   <div className="flex items-center gap-2">
                     <i>
@@ -131,14 +131,14 @@ const TourDetails = () => {
                   </div>
                 </div>
                 <h3 className="text-[22px] text-center md:text-start md:text-[30px]">
-                  Description
+                  Описание
                 </h3>
                 <p className="mobpara md:para">{desc}</p>
               </div>
 
               <div>
                 <h3 className="text-[25px] md:text-[35px]  font-bold mb-4 text-center md:text-start ">
-                  Reviews ({reviewsArray.length} reviews)
+                  Отзывы ({reviewsArray.length} отзывов)
                 </h3>
                 <form onSubmit={handleSubmit}>
                   <div className="flex gap-1 my-2 ">
@@ -208,14 +208,14 @@ const TourDetails = () => {
                     <input
                       type="text"
                       ref={reviewMsgRef}
-                      placeholder="Share your thoughts"
+                      placeholder="Поделитесь своими мыслями"
                       className="focus:outline-none w-2/3 flex-1 py-2 px-4 "
                     />
                     <button
                       className="bg-BaseColor hover:bg-BHoverColor animate-fade-in duration-300 py-2 hover:px-6 px-4 my-1 mx-1 text-white rounded-full"
                       type="submit"
                     >
-                      Submit
+                      отправить
                     </button>
                   </div>
                 </form>

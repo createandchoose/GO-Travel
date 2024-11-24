@@ -15,7 +15,7 @@ const TourCard = ({ tour }) => {
         <img className="w-full h-40 object-cover " src={photo} alt={title} />
         {featured === true ? (
           <p className="absolute pr-8 pl-4 text-white font-semibold py-1 bottom-2 rounded-l-full right-0 bg-BHoverColor text-lg">
-            Featured
+            Популярные
           </p>
         ) : (
           ""
@@ -45,11 +45,11 @@ const TourCard = ({ tour }) => {
       </div>
       <div className="flex items-center justify-between px-6 ">
         <p className="text-sm font-semibold mb-3">
-          Starts From <br />
-          <span className="text-xl">Rs. {price}</span>
+          Начало: <br />
+          <span className="text-xl"> {price},00 руб.</span>
         </p>
         <Link to={`/tours/${_id}`} className="btn text-sm">
-          Book Now
+          Бронировать сейчас
         </Link>
       </div>
     </div>

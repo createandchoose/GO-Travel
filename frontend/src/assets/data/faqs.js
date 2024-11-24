@@ -1,27 +1,18 @@
 export const faqs = [
   {
-    question: "How do I book a trip with TripsTravel?",
+    question: "Где Находится Республика Саха(Якутия)?",
     content:
-      "Booking your dream trip with TripsTravel is easy! Simply visit our website, browse through our exciting destinations, choose your preferred package, and follow the easy steps to secure your spot. For any assistance, our friendly customer support team is here to help.",
+      "Республика Саха(Якутия) является самым большим регионом Российской Федерации и находится в Дальневосточном федеральном округе ",
   },
   {
-    question: "What types of travel experiences does TripsTravel offer?",
+    question: "Насколько РС(Я) большая?",
     content:
-      "TripsTravel caters to a wide range of travel preferences. Whether you're seeking adventurous getaways, cultural immersions, or relaxing retreats, we have diverse packages to suit every taste. Explore our website to discover the variety of experiences we offer.",
+      "Является крупнейшим по площади регионом страны, а также самой большой административно-территориальной единицей в мире!!! По размеру территории Якутия превосходит Аргентину — восьмое государство в мире по площади[a], а также почти вдвое (в 1,99 раза) превышает площадь Монголии.",
   },
   {
-    question: "Are TripsTravel tours suitable for solo travelers?",
+    question: "Возможно ли путешествовать одному?",
     content:
-      "Absolutely! Many of our tours are designed to accommodate solo travelers. Join a group of like-minded explorers, make new friends, and embark on unforgettable journeys together. Check our solo traveler-friendly options for an enriching experience.",
+      "Конечно! Многие из наших туров предназначены для индивидуальных путешественников. Присоединяйтесь к группе исследователей-единомышленников, заводите новых друзей и отправляйтесь вместе в незабываемые путешествия. Ознакомьтесь с нашими вариантами, подходящими для индивидуальных путешественников, и получите незабываемые впечатления.",
   },
-  {
-    question: "How can I customize my travel itinerary with TripsTravel?",
-    content:
-      "At TripsTravel, we understand that every traveler is unique. To tailor your itinerary, contact our customization team. Whether you want to add specific activities, extend your stay, or create a personalized package, we're here to make your travel dreams a reality.",
-  },
-  {
-    question: "What safety measures does TripsTravel have in place?",
-    content:
-      "Your safety is our top priority. TripsTravel adheres to stringent safety standards and collaborates with trusted partners. We provide detailed safety information for each tour, and our experienced guides ensure a secure and enjoyable travel experience for all our guests.",
-  },
+  
 ];

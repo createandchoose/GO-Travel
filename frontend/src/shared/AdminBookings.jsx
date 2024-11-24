@@ -22,7 +22,7 @@ const BookingCard = ({ booking }) => {
   const bookedFor = booked.toDateString(); // Get a string representing the date portion
 
   const confirmDelete = async () => {
-    const result = window.confirm("Is this booking completed?");
+    const result = window.confirm("Вы уверены, что хотите удалить бронирование?");
     if (result) {
       deleteBooking();
     }
@@ -60,7 +60,7 @@ const BookingCard = ({ booking }) => {
           <td className="">{totalPrice}</td>
           <td>
             <button onClick={confirmDelete} className="Redbtn my-2 mx-2 ">
-              Completed
+              Удалить
             </button>
           </td>
         </tr>

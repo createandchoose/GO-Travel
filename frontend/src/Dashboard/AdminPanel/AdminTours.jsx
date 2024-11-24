@@ -23,11 +23,11 @@ const AdminTours = () => {
           <thead className="w-full py-2">
             <tr>
               <th></th>
-              <th className="tableData text-start">Title</th>
-              <th className="tableData">City</th>
-              <th className="tableData">Featured</th>
-              <th className="tableData">maxPeople</th>
-              <th className="tableData">Reviews</th>
+              <th className="tableData text-start">Заголовок</th>
+              <th className="tableData">Город</th>
+              <th className="tableData">Рекомендуемые</th>
+              <th className="tableData">Максимум Людей</th>
+              <th className="tableData">Отзывы</th>
             </tr>
           </thead>
           {tours?.map((tour) => (
